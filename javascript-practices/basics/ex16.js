@@ -42,13 +42,14 @@ var sum = function(){
     // arguments.forEach(function(e) {
     //     sum += e;
     // });
-    Array.prototype.forEach(function(e){
-        console.log("---->"+this);
-    });
+    // Array.prototype.forEach(function(e){
+    //     console.log("---->"+this);
+    // });
 
-    // Array.prototype.forEach.call(arguments,function(e){
-    //     sum += e;
-    // })
+
+    Array.prototype.forEach.call(arguments,function(e){
+        sum += e;
+    })
 
     return sum;
 }
