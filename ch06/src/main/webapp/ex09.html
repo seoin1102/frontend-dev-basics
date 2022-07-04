@@ -3,9 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+window.addEventListener("load", function(){
+   var imgElement = document.createElement("img");
+   
+   // setAttribute/getAttribute 사용
+   // 표준 Attribute =>  property 	(o) 
+   imgElement.setAttribute("src", "http://cdn.lecturernews.com/news/photo/202109/75977_276099_2749.jpg");
+   imgElement.setAttribute("style","width:200px");
+   imgElement.setAttribute("alt", '탑건!');
+   
+   // property =>  표준 Attribute	(o)
+   imgElement["title"] = '탑건만세~~';
+
+   // property =>  비표준 Attribute	(x)
+   imgElement['no'] = 10; 		
+   
+   // 비표준 attribute, property (x)
+   // 왜 property 가 되지 않지?
+   imgElement.setAttribute('data-no', 10);  
+   setTimeout(function(){
+      document.body.appendChild(imgElement);
+      console.log(imgElement['no'], imgElement.getAttribute("no"));
+      console.log(imgElement.alt, imgElement['data-no'], imgElement.getAttribute("data-no"));
+ 
+
+   },2000);
+});
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>
 	<h2>3. HTML Element 속성 조작하기2</h2>
+	<img data-no='10' data-name='' data-email=''/>
 </body>
 </html>

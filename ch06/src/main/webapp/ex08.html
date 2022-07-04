@@ -3,9 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+window.addEventListener("load", function(){
+   var imgElement = document.createElement("img");
+   imgElement.src = "http://cdn.lecturernews.com/news/photo/202109/75977_276099_2749.jpg";
+   imgElement.style.width = "200px";
+   imgElement.alt = '탑건!';
+   imgElement.title = '탑건만세~~';
+   
+   setTimeout(function(){
+      document.body.appendChild(imgElement);
+   },2000);
+});
+</script>
 </head>
 <body>
-	<h1 id='h' data-no='10'>DOM(Document Object Model)</h1>
-	<h2>3. HTML Element 속성 조작하기1</h2>
+   <h1 id='h' data-no='10'>DOM(Document Object Model)</h1>
+   <h2>3. HTML Element 속성 조작하기1</h2>
 </body>
 </html>
