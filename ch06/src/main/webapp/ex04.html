@@ -3,6 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src='browser-detect.js'></script>
+<script>
+for(prop in navigator){
+	console.log(prop+":"+navigator[prop]);
+}
+
+BrowserDetect.init();
+console.log(BrowserDetect.browser);
+console.log(BrowserDetect.version);
+console.log(BrowserDetect.OS);
+
+</script>
 </head>
 <body>
 	<h1>BOM(Browser Object Model)</h1>
