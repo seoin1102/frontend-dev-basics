@@ -2,6 +2,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- 압축버전(애플리케이션 서버 호스팅): compressed, production -->
+<!-- script src="jquery/jquery-3.6.0.min.js"></script> -->
+<!-- 소스버전(애플리케이션 서버 호스팅): uncompressed, development -->
+<!--script src="jquery/jquery-3.6.0.js"></script> -->
+<!-- 압축버전(CDN): compressed, production -->
+<!-- script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- 소스버전(CDN): uncompressed, development -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script>
+var $obj1 = jQuery();
+console.log(typeof(jQuery), typeof($obj1), $obj1.jquery, $obj1);
+
+var $obj2 = $();
+console.log(typeof($), typeof($obj2), $obj2.jquery);
+</script>
 </head>
 <body>
 	<h1>jQuery 로딩</h1>
