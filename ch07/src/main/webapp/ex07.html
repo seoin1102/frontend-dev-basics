@@ -6,6 +6,14 @@
 <script>
 $(function(){
 	setTimeout(function(){	
+		$('.red strong')
+			.css('color','red')
+			.css('fontWeight','normal')
+
+		$('.blue strong').css({
+			color: 'red',
+			fontWeight: 'normal'
+		});
 	}, 1000);
 });
 </script>
