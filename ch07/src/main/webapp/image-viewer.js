@@ -39,10 +39,6 @@ var imageViewer = {
 
 		}
 			
-		
-		
-		console.log(this._intervalId)
-		
 	},
 	_intervalId: null,
 	
