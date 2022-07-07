@@ -34,6 +34,7 @@ $(function(){
 				console.log(status, error);
 			}
 		});
+		console.log("send request")
 	});
 });
 </script>
