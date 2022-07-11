@@ -10,6 +10,13 @@
 <title>Insert title here</title>
 <script type="text/javascript" src="${pageContext.request.contextPath }/jquery/jquery-3.6.0.js"></script>
 <script>
+/*
+ * 
+
+ 1. scroll event는 ch07/ex36.html 참고 
+ 2. /api/guestbook?sno=10: sno 보다 작은 row를 top-k(limit 0, k) 구현할 것
+
+*/
 var render = function(vo, mode){
 	var htmls=
 		"<li data-no=''>"+	
