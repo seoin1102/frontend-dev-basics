@@ -12,14 +12,12 @@
 $(function(){
 	$("#create").click(function(){
 		var vo = {
-			name: "둘리",
-			email: "dooly@gmail.com",
-			password: "1234",
-			gender: "male"
+			sender: "둘리",
+			context: "dooly@gmail.com"
 		};
 		
 		$.ajax({
-			url: "${pageContext.request.contextPath }/api/user",
+			url: "http://192.168.10.10:8080/api/chat",
 			type: "post",
 			dataType: "json",
 			contentType: "application/json",
